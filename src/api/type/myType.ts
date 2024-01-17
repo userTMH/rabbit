@@ -14,7 +14,7 @@ export type EmptyObject = {
 /**
  * 用户信息
  */
-export type mResult = {
+export type lResult = {
   avatar: string;
   /**
    * 生日
@@ -215,6 +215,87 @@ export type aResult = {
    * 收货人姓名
    */
   receiver: string;
+  [property: string]: any;
+};
+
+//#endregion
+
+//#region 新建
+/**
+ * empty object，收货地址：请求体参数
+ */
+export type mEmptyObject = {
+  /**
+   * 详细地址
+   */
+  address: string;
+  /**
+   * 所在城市编码
+   */
+  cityCode: string;
+  /**
+   * 联系方式
+   */
+  contact: string;
+  /**
+   * 所在区/县编码
+   */
+  countyCode: string;
+  /**
+   * 是否为默认，1为是，0为否
+   */
+  isDefault: number;
+  /**
+   * 所在省份编码
+   */
+  provinceCode: string;
+  /**
+   * 收货人姓名
+   */
+  receiver: string;
+  [property: string]: any;
+};
+export type msResult = {
+  /**
+   * 详细地址
+   */
+  address: string;
+  /**
+   * 所在城市编码
+   */
+  cityCode: string;
+  /**
+   * 联系方式
+   */
+  contact: string;
+  /**
+   * 所在区/县编码
+   */
+  countyCode: string;
+  /**
+   * 完整行政区
+   */
+  fullLocation: string;
+  /**
+   * 收货地址id
+   */
+  id: string;
+  /**
+   * 是否为默认，1为是，0为否
+   */
+  isDefault: number;
+  /**
+   * 所在省份编码
+   */
+  provinceCode: string;
+  /**
+   * 收货人姓名
+   */
+  receiver: string;
+};
+
+export type mResult = {
+  id: number;
   [property: string]: any;
 };
 

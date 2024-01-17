@@ -4,13 +4,16 @@ import type {
   EmptyObject,
   aResult,
   hResult,
+  lResult,
+  mEmptyObject,
   mResult,
+  msResult,
   pResult,
 } from "./type/myType";
 
 //登录
 export const login = (EmptyOb: EmptyObject) => {
-  return http<mResult>({
+  return http<lResult>({
     url: "/login",
     method: "POST",
     data: EmptyOb,
@@ -37,6 +40,32 @@ export const profile = (data: ApifoxModel) => {
 export const addre = () => {
   return http<aResult[]>({
     url: "/member/address",
+    method: "GET",
+  });
+};
+
+//新建
+export const member = (data: mEmptyObject) => {
+  return http<mResult>({
+    url: "/member/address",
+    method: "POST",
+    data,
+  });
+};
+
+//修改地址
+export const Modify = (id: string, data: mEmptyObject) => {
+  return http<mResult>({
+    url: `/member/address/${id}`,
+    method: "PUT",
+    data,
+  });
+};
+
+//获取修改数据
+export const Modifys = (id: string) => {
+  return http<msResult>({
+    url: `/member/address/${id}`,
     method: "GET",
   });
 };

@@ -1,127 +1,127 @@
 {
-	"easycom": {
-		"autoscan": true,
-		"custom": {
-			// uni-ui 规则如下配置
-			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
-		}
-	},
-	"pages": [
-		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/home/index",
-			"style": {
-				"navigationBarTitleText": "home",
-				"navigationStyle": "custom"
-				// "app-plus": {
-				//   "titleNView": false
-				// }
-			}
-		},
-		{
-			"path": "pages/classify/index",
-			"style": {
-				"navigationBarTitleText": "商品分类",
-				"navigationBarBackgroundColor": "#f8f8f8"
-			}
-		},
-		{
-			"path": "pages/Shopping/index",
-			"style": {
-				"navigationBarTitleText": "Shopping"
-			}
-		},
-		{
-			"path": "pages/my/index",
-			"style": {
-				"navigationBarTitleText": "my",
-				"app-plus": {
-					"titleNView": false
-				}
-			}
-		},
-		{
-			"path": "subpkg_home/prefer/index",
-			"style": {
-				"navigationBarTitleText": ""
-			}
-		},
-		{
-			"path": "subpkg_home/detail/index",
-			"style": {
-				"navigationBarTitleText": "商品详情"
-			}
-		},
-		{
-			"path": "subpkg_my/login/index",
-			"style": {
-				"navigationBarTitleText": "登录"
-			}
-		},
-		{
-			"path": "subpkg_my/individual/index",
-			"style": {
-				"navigationBarTitleText": "个人信息",
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "subpkg_my/set/index",
-			"style": {
-				"navigationBarTitleText": "设置"
-			}
-		},
-		{
-			"path": "subpkg_my/address/index",
-			"style": {
-				"navigationBarTitleText": "地址管理"
-			}
-		},
-		{
-			"path": "subpkg_my/revise/index",
-			"style": {
-				"navigationBarTitleText": "修改地址"
-			}
-		},
-		{
-			"path": "subpkg_my/add/index",
-			"style": {
-				"navigationBarTitleText": "新建地址"
-			}
-		}
-	],
-	"tabBar": {
-		"list": [
-			{
-				"pagePath": "pages/home/index",
-				"text": "首页",
-				"iconPath": "./static/tabs/home_default.png",
-				"selectedIconPath": "./static/tabs/home_selected.png"
-			},
-			{
-				"pagePath": "pages/classify/index",
-				"text": "分类",
-				"iconPath": "./static/tabs/category_default.png",
-				"selectedIconPath": "./static/tabs/category_selected.png"
-			},
-			{
-				"pagePath": "pages/Shopping/index",
-				"text": "购物车",
-				"iconPath": "./static/tabs/cart_default.png",
-				"selectedIconPath": "./static/tabs/cart_selected.png"
-			},
-			{
-				"pagePath": "pages/my/index",
-				"text": "我的",
-				"iconPath": "./static/tabs/user_default.png",
-				"selectedIconPath": "./static/tabs/user_selected.png"
-			}
-		]
-	},
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	}
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      // uni-ui 规则如下配置
+      "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+    }
+  },
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/home/index",
+      "style": {
+        "navigationBarTitleText": "home",
+        "navigationStyle": "custom"
+        // "app-plus": {
+        //   "titleNView": false
+        // }
+      }
+    },
+    {
+      "path": "pages/classify/index",
+      "style": {
+        "navigationBarTitleText": "商品分类",
+        "navigationBarBackgroundColor": "#f8f8f8"
+      }
+    },
+    {
+      "path": "pages/Shopping/index",
+      "style": {
+        "navigationBarTitleText": "Shopping"
+      }
+    },
+    {
+      "path": "pages/my/index",
+      "style": {
+        "navigationBarTitleText": "my",
+        "app-plus": {
+          "titleNView": false
+        }
+      }
+    },
+    {
+      "path": "subpkg_home/prefer/index",
+      "style": {
+        "navigationBarTitleText": ""
+      }
+    },
+    {
+      "path": "subpkg_home/detail/index",
+      "style": {
+        "navigationBarTitleText": "商品详情"
+      }
+    },
+    {
+      "path": "subpkg_my/login/index",
+      "style": {
+        "navigationBarTitleText": "登录"
+      }
+    },
+    {
+      "path": "subpkg_my/individual/index",
+      "style": {
+        "navigationBarTitleText": "个人信息",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "subpkg_my/set/index",
+      "style": {
+        "navigationBarTitleText": "设置"
+      }
+    },
+    {
+      "path": "subpkg_my/address/index",
+      "style": {
+        "navigationBarTitleText": "地址管理"
+      }
+    },
+    {
+      "path": "subpkg_my/revise/index",
+      "style": {
+        "navigationBarTitleText": "修改地址"
+      }
+    },
+    {
+      "path": "subpkg_my/add/index",
+      "style": {
+        "navigationBarTitleText": "新建地址"
+      }
+    }
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "./static/tabs/home_default.png",
+        "selectedIconPath": "./static/tabs/home_selected.png"
+      },
+      {
+        "pagePath": "pages/classify/index",
+        "text": "分类",
+        "iconPath": "./static/tabs/category_default.png",
+        "selectedIconPath": "./static/tabs/category_selected.png"
+      },
+      {
+        "pagePath": "pages/Shopping/index",
+        "text": "购物车",
+        "iconPath": "./static/tabs/cart_default.png",
+        "selectedIconPath": "./static/tabs/cart_selected.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "./static/tabs/user_default.png",
+        "selectedIconPath": "./static/tabs/user_selected.png"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  }
 }

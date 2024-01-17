@@ -11,7 +11,7 @@
               style="margin-left: 10px;padding: 0px 5px;border: 1px solid red;border-radius: 5px;color: red;">默认
             </view>
           </view>
-          <view @clcik="revise">| 修改</view>
+          <view @click="revise(item.id)">| 修改</view>
         </view>
         <view class="text-botton">{{ item.fullLocation }} {{ item.address }}</view>
       </view>
@@ -45,9 +45,9 @@ const getaddress = async () => {
 }
 
 //修改事件
-const revise = () => {
+const revise = (id: string) => {
   uni.navigateTo({
-    url: '/subpkg_my/revise/index',
+    url: `/subpkg_my/add/index?id=${id}`,
   })
 }
 
