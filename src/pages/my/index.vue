@@ -16,7 +16,7 @@
             <view class="tex-botton">点击登录账号</view>
           </view>
         </view>
-        <view class="text-right">设置</view>
+        <view class="text-right" @click="Setup">设置</view>
       </view>
     </view>
     <view class="conents">
@@ -122,6 +122,14 @@ const onScrollToLower = () => {
   getGuess()
 }
 //#endregion
+
+//设置事件
+const Setup = () => {
+  uni.navigateTo({
+    url: '/subpkg_my/set/index',
+  })
+}
+
 
 onLoad((options) => {
   getGuess()

@@ -2,6 +2,7 @@ import { http } from "@/utils/http";
 import type {
   ApifoxModel,
   EmptyObject,
+  aResult,
   hResult,
   mResult,
   pResult,
@@ -29,5 +30,13 @@ export const profile = (data: ApifoxModel) => {
     url: "/member/profile",
     method: "PUT",
     data,
+  });
+};
+
+//地址管理
+export const addre = () => {
+  return http<aResult[]>({
+    url: "/member/address",
+    method: "GET",
   });
 };
